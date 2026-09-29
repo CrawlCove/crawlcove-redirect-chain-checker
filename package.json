@@ -1,0 +1,46 @@
+{
+  "name": "crawlcove-redirect-chain-checker",
+  "version": "1.0.0",
+  "description": "Redirect chain checker CLI: follow every hop of a URL's redirects, flag chains, loops, HTTP→HTTPS bounces and meta refreshes, exit non-zero in CI.",
+  "type": "module",
+  "bin": {
+    "redirect-chain-checker": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "seo",
+    "redirect",
+    "redirect-chain",
+    "redirect-checker",
+    "301",
+    "302",
+    "cli",
+    "crawl-cove"
+  ],
+  "author": "Crawl Cove",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CrawlCove/crawlcove-redirect-chain-checker.git"
+  },
+  "homepage": "https://crawlcove.com/tools/redirect-checker?utm_source=github&utm_medium=crawlcove-redirect-chain-checker",
+  "dependencies": {
+    "commander": "^15.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.2"
+  }
+}
